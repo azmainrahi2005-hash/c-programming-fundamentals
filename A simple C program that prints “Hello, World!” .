@@ -1,0 +1,7 @@
+#include <stdio.h> // Header File: Includes standard input/output functions like printf()
+
+int main() { // main() function: The execution of every C program starts from here
+    printf("Hello, World!\n");
+    
+    return 0; // Return statement: Indicates that the program executed successfully
+}
