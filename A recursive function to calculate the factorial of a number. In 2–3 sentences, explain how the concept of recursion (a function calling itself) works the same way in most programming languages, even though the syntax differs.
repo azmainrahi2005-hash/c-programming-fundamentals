@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+long long factorial(int n) {
+    if (n <= 1) {
+        return 1; // Base case
+    }
+    return n * factorial(n - 1); // Recursive case
+}
+
+int main() {
+    int num;
+    scanf("%d", &num);
+    
+    printf("Factorial of %d = %lld\n", num, factorial(num));
+    return 0;
+}
