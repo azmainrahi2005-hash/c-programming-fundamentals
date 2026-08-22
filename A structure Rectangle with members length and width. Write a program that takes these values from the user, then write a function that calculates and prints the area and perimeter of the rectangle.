@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct Rectangle {
+    float length;
+    float width;
+};
+
+void calculateAreaAndPerimeter(struct Rectangle r) {
+    float area = r.length * r.width;
+    float perimeter = 2 * (r.length + r.width);
+    
+    printf("Area = %.0f\n", area);
+    printf("Perimeter = %.0f\n", perimeter);
+}
+
+int main() {
+    struct Rectangle rect;
+    scanf("%f %f", &rect.length, &rect.width);
+    
+    calculateAreaAndPerimeter(rect);
+    
+    return 0;
+}
